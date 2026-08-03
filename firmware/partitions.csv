@@ -1,0 +1,9 @@
+# Name,     Type, SubType,  Offset,   Size,    Flags
+# nvs:       Non-Volatile Storage  (WiFi 凭据等)
+# phy_init:  PHY 校准数据
+# factory:   应用固件 (1.5MB)
+# storage:   FAT 数据分区 (存放照片/日志, ~2.4MB)
+nvs,      data, nvs,     0x9000,  0x6000,
+phy_init, data, phy,     0xf000,  0x1000,
+factory,  app,  factory, 0x10000, 0x180000,
+storage,  data, fat,     0x190000,0x270000,

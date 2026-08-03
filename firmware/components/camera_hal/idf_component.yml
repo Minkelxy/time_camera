@@ -1,0 +1,5 @@
+## camera_hal 组件依赖清单
+## 引入 espressif/esp_camera 托管组件以驱动 OV2640 DVP 摄像头。
+## esp_camera 内部依赖 PSRAM 支持（sdkconfig 中已开启 CONFIG_SPIRAM）。
+dependencies:
+  espressif/esp_camera: "^2.0.0"
